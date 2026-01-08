@@ -2,6 +2,7 @@
 
 An NLP-based web application that extracts transcripts from YouTube videos and generates concise, human-readable summaries using a Transformer-based deep learning model. The application is built with Hugging Face Transformers, PyTorch, and Gradio.
 
+
 📌 Project Overview
 
 YouTube videos often contain long and information-dense content. This project automates the process of:
@@ -16,6 +17,7 @@ Presenting results via a simple web interface
 
 The system is designed to be lightweight, portable, and easy to deploy on local machines.
 
+
 🧠 Key Features
 
 🔗 Accepts any public YouTube video URL
@@ -25,6 +27,7 @@ The system is designed to be lightweight, portable, and easy to deploy on local 
 🧩 Handles long transcripts using intelligent text chunking
 
 🤖 Uses DistilBART (CNN-based) for abstractive summarization
+
 
 ⚠️ Limitations
 
@@ -36,6 +39,7 @@ Extremely long videos may take longer to process
 🌐 Interactive web UI using Gradio
 
 💻 Runs on CPU or GPU (auto-detected)
+
 
 📚 Learning Outcomes
 
