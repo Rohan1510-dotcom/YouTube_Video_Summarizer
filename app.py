@@ -7,10 +7,6 @@ from transformers import pipeline
 
 text_summary = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6", torch_dtype=torch.bfloat16)
 
-# model_path = ("../Models/models--sshleifer--distilbart-cnn-12-6/snapshots"
-#               "/a4f8f3ea906ed274767e9906dbaede7531d660ff")
-# text_summary = pipeline("summarization", model=model_path,
-#                 torch_dtype=torch.bfloat16)
 
 def summary (input):
     output = text_summary(input)
@@ -43,10 +39,6 @@ def get_youtube_transcript(video_url):
     except Exception as e:
         return f"An error occurred: {e}"
 
-
-# Example URL (Replace this with the actual URL when using the script)
-# video_url = "https://youtu.be/5PibknhIsTc"
-# print(get_youtube_transcript(video_url))
 
 gr.close_all()
 
